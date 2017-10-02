@@ -1,1 +1,2 @@
-hello, i am Andrey
+Hello, my name is Andrey!
+I am a Student!
