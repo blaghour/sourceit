@@ -1,2 +1,0 @@
-# sourceit
-Source study project
