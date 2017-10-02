@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Lorem
+=======
+Lorem ipsulum.....  
+>>>>>>> 3a7cb63b3d8b3bdaaaf9efdc68e560e844d23cb9
