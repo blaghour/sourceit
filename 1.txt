@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 Lorem ipsulum.....  
-=======
-fdhfgh
->>>>>>> Add new file for teacher
+
