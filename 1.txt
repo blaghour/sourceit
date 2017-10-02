@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-=======
-Lorem ipsulum.....  
->>>>>>> 3a7cb63b3d8b3bdaaaf9efdc68e560e844d23cb9
-=======
-Lorem ipsulum.....  
-=======
-fdhfgh
->>>>>>> Add new file for teacher
->>>>>>> 2e9cde7a7c1e4b0943255fc6d7f0d837480a3e8c
+
