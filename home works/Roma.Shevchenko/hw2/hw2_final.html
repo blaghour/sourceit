@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-Compatible" content="ie=edge">
+	<title>Home Work 2</title>
+</head>
+<body>
+
+	<script >
+		function Fun1(question){
+			do {
+			let result = prompt(question);
+			if(result)
+			{
+				return result;
+			}
+				alert('Invalidate data');
+			}while (true)
+
+		}
+		
+		let isMan = Fun1('What is your gender?');
+		let age = Fun1('How old are you?');
+		let Name = Fun1('What is your name');
+		let pet = Fun1('What is your favorite pets');
+		alert('You are a ' + isMan +' .' + 'You are ' +  age + ' ' + 'years' +' .' + 'You are ' + Name  +' .' + 'Your favorite pet is a ' + pet);
+		
+		
+        
+
+	</script>
+
+</body>
+</html>
