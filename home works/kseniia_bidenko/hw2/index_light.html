@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<script>
+		let age = prompt('How old are you?', 18);
+		let genderQ = confirm('Are you a woman?');
+
+		let gender = genderQ ? 'woman' : 'man';
+
+		let name = prompt('What is your name?');
+
+		let pet = prompt('Do you have a pet? If not, type nothing.');
+
+		if ( name == '' || name == null){
+			name = "stranger";
+		}
+
+		let message = "Hi " + name + "! \n";
+
+		if(age != '' || age != null){
+			message += "As I can see, you are a " + age + " year old " + gender + ". ";
+		}
+		else {
+			message += "As I can see, you are a " + gender + ". But I don't know your age.";
+		}
+
+		if (pet == '' || pet == null){
+
+			message += "\n Isn't life without pet boring?";
+		}
+		else{
+			message += "\n How your " + pet + " doing?";
+		}
+
+
+		alert(message);
+
+
+	</script>
+
+</body>
+</html>
