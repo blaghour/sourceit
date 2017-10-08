@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Variables ES6</title>
+</head>
+<body>
+	<script>
+		
+		var name = prompt("What is your name?");
+
+		var age = prompt("How old are you?");
+
+		var gender = confirm("Are you man?");
+		/*switch(gender) {
+			case 'man':
+				gender = "man";
+			break;
+			case 'false':
+				gender = "woman";
+			break;
+		}*/
+		 if (gender == true){
+                gender = "man";
+            }
+            else if (gender == false){
+                gender = "woman";
+            };        
+
+		var pet = prompt("What is your favourite pet?");
+
+		alert("Hello, "+ name +". I am a "+ gender +". I am "+ age +" years old. How's your " + pet +"? ");
+
+	</script>
+</body>
+</html>
