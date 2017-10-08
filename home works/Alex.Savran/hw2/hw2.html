@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert, Prompt, Confirm</title>
+</head>
+<body>
+  <script>
+    let age = prompt('How are you old?', '');
+    let gender = prompt('Are you man or woman?', '');
+   	let name = prompt('What is your name?', '');
+	let pet = prompt('What is your favourite pet?', '');
+
+	if (+age == 0){
+		age = 'many';
+	}
+
+	if (+gender == 0){
+		gender = 'lazy';
+	}
+
+	if (+name == 0){
+		name = 'Doe';
+	}
+
+	if (+pet == 0){
+		pet = 'pet';
+	}
+
+	let message = 'Hi, ' + name + '! You are ' + gender + ' and you are ' + age + ' years old. How are your ' + pet + ' ?';
+	alert(message);
+  </script>
+</body>
+</html>
