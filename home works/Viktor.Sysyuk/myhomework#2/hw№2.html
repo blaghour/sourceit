@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw2</title>
+</head>
+<body>
+   <script type="text/javascript">
+       function About(){
+        let age = prompt('How old are you?', 25);
+        let old = parseInt(age);
+                            if (isNaN(old)){
+                                alert('Enter the correct value!');
+           About();
+                            } else if (old<0){
+                                alert('Age can not be negative!');
+           About();
+       }
+        let gender = confirm('You are a man?');
+                            if (gender == true){
+                                gender = "man";        
+            }
+                              else if (gender == false){
+              gender = confirm('You are woman?');
+                            if (gender == true){
+                                gender = "woman";
+                            } else {
+              gender = prompt('Enter the gender');
+                }
+                }
+        let name = prompt('Name', 'Viktor');
+        let pet = prompt('Favorite pet?', 'cat');
+        alert('Hi ' + name + '! You are a ' + gender + '. You are ' + old + ' years old.' + 'You have a ' + pet + '.');
+       } 
+       About();
+    </script>
+    
+</body>
+</html>

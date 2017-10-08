@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let old = prompt("How old are you?",25);
+	alert("Your age: "+ old);
+	let name = prompt("What your Name?");
+	alert("Hi "+name);
+	let gender = confirm("Are you man?");
+	if(gender = true){
+		alert("You are man");
+	}else{
+		alert("you ar girl");
+	}
+
+	let pet = prompt("Who is your Favorit pet?");
+	
+	alert("How your "+pet);
+
+</script>
+</body>
+</html>
