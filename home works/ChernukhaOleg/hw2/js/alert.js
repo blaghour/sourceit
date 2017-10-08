@@ -4,7 +4,7 @@ let gender = confirm('You are a man?');
 if (gender == true) {
     gender = 'man';
 }else {
-    gender = 'woman'
+    gender = 'woman';
 }
 let pet = prompt('who is your favorite pet ?');
 
