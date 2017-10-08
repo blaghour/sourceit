@@ -1,10 +1,12 @@
 let name = prompt('What is your name?');
 let age = prompt('How old are you?');
 let gender = confirm('You are a man?');
+
 if (gender == true) {
     gender = 'man';
+
 }else {
-    gender = 'woman';
+    gender = 'woman'
 }
 let pet = prompt('who is your favorite pet ?');
 
