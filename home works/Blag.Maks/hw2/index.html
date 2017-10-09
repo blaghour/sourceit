@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>blag</title>
+</head>
+<body>
+	<script>
+		let name, age, gender, yourPet;
+
+		alert('Hello!');
+
+		name = prompt('What is your name?', name);
+
+		alert('Hello ' + name);
+
+		age = prompt('How old are you?', age);
+		
+		alert (name + ', you are ' + age + ' years old');
+
+		gender = prompt('Are you male/female/other ', gender);
+
+		switch(gender) {
+			case 'male':
+				alert('you are the real man');
+			break;
+			case 'female':
+				alert('you are beautiful girl');
+			break;
+			case 'other':
+				alert('it is your choice');
+			break;
+			default:
+				alert('i do not understand your');
+			break
+		}
+
+		yourPet = prompt('what is your favotite pet?', yourPet);
+
+		
+		alert(
+			`Hi, ${name}! You are ${age} years old. You are ${gender}. Hey, ${name}, how is your ${yourPet}? `
+			);
+
+	</script>
+</body>
+</html>
