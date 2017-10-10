@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Fibanachi</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		let array = [];
+		let count = Number(prompt("Please, input index: ", 1));
+		array [0] = 1;
+		array [1] = 1;
+		array [2] = 2;
+		for (let i = 3; i < count; i++){
+			array [i] = array[i-1] + array[i-2]; 
+		}
+
+		alert(array[count-1]);
+	</script>
+</body>
+</html>
