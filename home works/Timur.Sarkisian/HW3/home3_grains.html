@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let heft,heft_grains;
+        heft = 0.0000000042;// вес зерна в тоннах
+        let cost = Number(prompt('enter the cost of a ton of grain in dollars'));
+        let navar;
+    let zer=1;
+    for(let i=0;i<64;i++){
+        zer=zer*2;
+    }
+    console.log('quantity grains on a chessboard: '+zer);
+    heft_grains = zer*heft;
+    console.log('grains in a ton: '+heft_grains);
+    navar = heft_grains * cost;
+    console.log("Sage made money: " +navar+" $"  );
+    </script>
+</body>
+</html>

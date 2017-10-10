@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //converting the bottom lines to a number
+    let a = Number(prompt('Enter unhealthy a')); 
+    let b = Number(prompt('Enter unhealthy b'));
+    let c = Number(prompt('Enter unhealthy c'));
+    let d,x2,x,x1;
+    d = b*b - 4*a*c;// calculation of the discriminant
+    if(d>0){
+    x1 = (-1*b -Math.sqrt(d)) / (2*a);
+    x2 = (b - Math.sqrt(d)) / (2*a);
+    console.log("roots 1: " + x1);
+    console.log("roots 2: " + x2);
+    }
+    else if(d===0){
+        x = -(b / (2*a));
+        console.log("Discriminant = 0 root 1: "+x);
+    }
+    else{
+        console.log("No roots,becouse discriminant < 0");
+    }
+
+    </script>
+</body>
+</html>

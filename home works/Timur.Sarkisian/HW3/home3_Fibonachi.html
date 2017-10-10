@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let b = prompt("Enter please  number of the number Fibonacci");
+    let a = 1,c;
+    let a1 = 1;
+    let b1 = parseInt(b);
+    if(b1===1 || b1===2) {
+        console.log('1');
+    } else{
+     for (var count = 0 ;count<b1-2;count++){
+        c=a+a1;
+        a=a1;
+        a1=c;
+    }
+    console.log(c);
+    }
+    </script>
+</body>
+</html>
