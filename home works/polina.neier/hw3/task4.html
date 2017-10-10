@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <title>task4</title>
+</head>
+<body>
+<script>
+
+let b1 = 1;
+let q = 2;
+let bn = b1;
+
+for (let i = 1; i < 64; i++) {
+bn = bn * q;//некорректно считает большие числа
+} 
+
+let sumMembers = (bn * q - b1) / (q - 1);
+
+console.log('number of grains is ' + sumMembers + ' grains.');
+
+let weight = sumMembers * 0.065;
+
+console.log('weight is ' + weight + ' billions tons.')
+
+let profit = weight * 200;
+
+console.log('profit is ' + profit + ' dollars.')
+
+</script>
+</body>
+</html>

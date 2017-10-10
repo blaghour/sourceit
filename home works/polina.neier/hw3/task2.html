@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <title>task2</title>
+</head>
+<body>
+<script>
+
+let a1 = +prompt('Enter the first member', 1);
+let d = +prompt('Enter the difference', 1);
+let n = +prompt('Enter the number of members', 1)
+let an = a1;
+for (let i = 1; i < n; i++) {
+    an = an + d;
+}
+let sumMembers = ((a1 + an) / 2) * n;
+console.log('an = ' + an + '; sum of members is ' + sumMembers);
+
+</script>
+</body>
+</html>
