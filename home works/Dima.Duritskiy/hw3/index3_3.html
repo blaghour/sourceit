@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Task #3</title>
+	<meta charset = "urf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		let a = Number(prompt("Please, input a: ", 1));
+		let b = Number(prompt("Please, input b: ", 1));
+		let c = Number(prompt("Please, input c: ", 1));
+		let result1, result2;
+
+		let D = b*b - 4*a*c;
+		let d = Math.sqrt(D);
+
+		if (D < 0){
+			alert("There is no result!");
+		} else if(D==1){
+			result2 = (b*(-1) + d)/(2*a);
+			result1 = result2;
+			alert(result1);
+			alert(result2);
+		} else{
+			result2 = (b*(-1) + d)/(2*a);
+			result1 = (b*(-1) - d)/(2*a);
+			alert(result1);
+			alert(result2);
+		}
+		
+	</script>
+</body>
+</html>
