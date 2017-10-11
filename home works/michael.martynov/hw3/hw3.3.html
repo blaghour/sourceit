@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>quadratic equation</title>
+</head>
+<body>
+	<script>
+
+        let first_coefficient = +prompt('Enter first coefficient, "a"' );
+        let second_coefficient = +prompt('Enter second coefficient, "b"' );
+        let free_member = +prompt('Enter free member "c"');
+
+        let Discriminant = Math.pow(second_coefficient, 2) - 4 * first_coefficient * free_member;
+        let root1, root2;
+
+        if (Discriminant<0) {
+            alert('This equation has no solutions'); }
+                else if (Discriminant==0) {
+                    root1 = (-second_coefficient)/(2*first_coefficient);
+                    root2 = root1;
+                    alert('x1,2 = ' + root1); }
+                        else {
+                            root1 = ((-second_coefficient) + Math.sqrt(Discriminant)) / (2*first_coefficient);
+                            root2 = ((-second_coefficient) - Math.sqrt(Discriminant)) / (2*first_coefficient);
+                            alert('x1 = ' + root1 + '; x2 = ' + root2); }
+
+
+
+	</script>
+</body>
+</html>

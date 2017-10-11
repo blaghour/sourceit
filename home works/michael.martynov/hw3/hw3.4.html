@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>sage and chess</title>
+</head>
+<body>
+	<script>
+
+       let first_member = +prompt('Enter first coefficient, "b1"' );
+       let denominator = +prompt('Enter denominator of progression, "q"');
+       let number = +prompt('Enter number of members, "n"'); 
+
+       let last_number = first_member * Math.pow(denominator, (number-1));
+       let sum = (first_member - last_number * denominator) / (1 - denominator);
+
+       let weight_onegrain = 40; //milligram
+       let total_weight = (sum * weight_onegrain) *  Math.pow(10, (-9)); // tons
+       let price = 5000;
+       let dollar_rate = 27;
+       let total_cost = ( (total_weight * price) / dollar_rate);
+
+       alert('Total grains = ' + sum + ' pieces; Total weight of grains = ' + total_weight + 
+       ' tons; Total cost = ' + total_cost + ' dollars;');
+       
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Fibonacci</title>
+</head>
+<body>
+	<script>
+		function fib(n) {
+		let fib1 = 1;
+		let fib2 = 1;		
+		
+			for (let i = 3; i <= n; i++) {
+				let fibsum = fib1 + fib2;
+				fib1 = fib2;
+				fib2 = fibsum;
+            }
+			return fib2;
+		}
+		alert(fib(12));
+
+	</script>
+</body>
+</html>

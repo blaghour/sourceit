@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>arithmetic progression</title>
+</head>
+<body>
+	<script>
+
+        let first_number = +prompt("What is the first number of an arithmetic progression?");
+        let difference_progression = +prompt("What is the step of an arithmetic progression?");
+        let number_elements = +prompt("How many elements are in the arithmetic progression?");
+        
+        let ar_prog = ( first_number + difference_progression * (number_elements - 1) );
+        let sum_ar_prog = ( ( ( first_number + ar_prog) / 2) * number_elements );
+
+        alert(' Last member arithmetic progression ' + 
+            ar_prog + '; Sum of the arithmetic progression ' + sum_ar_prog );
+
+	</script>
+</body>
+</html>
