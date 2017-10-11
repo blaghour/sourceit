@@ -10,7 +10,7 @@
 	let name = prompt("What your Name?");
 	alert("Hi "+name);
 	let gender = confirm("Are you man?");
-	if(gender = true){
+	if(gender == true){
 		alert("You are man");
 	}else{
 		alert("you ar girl");
