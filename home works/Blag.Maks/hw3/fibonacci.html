@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>fibonacci</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="" rel="stylesheet">
+    </head>
+    <body>
+
+        <script>  
+        var n = Number (prompt('input n-th number of Fibonacci', n))
+        var x = 0, y = 1; 
+         for (var i = 1; i <= n; i++) {
+            var c = x + y;
+            x = y;
+            y = c;
+            c = (c - x) + (c - y);
+        };
+
+        alert(n + 'th number of Fibanacci = '+ c);
+        </script>
+    
+    </body>
+</html>
