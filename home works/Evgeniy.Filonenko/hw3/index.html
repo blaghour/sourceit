@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework #3</title>
+</head>
+<body>
+  <script>
+    // Fibonacci:
+		let fibonacciNumber = 0,
+				fibonacciNext = 1,
+				temp;
+
+		for (let i = 0; i < 11; i++) {
+			temp = fibonacciNumber + fibonacciNext;
+			fibonacciNumber = fibonacciNext;
+			fibonacciNext = temp;
+		}
+
+		console.log('12th Fibonacci number: ' + fibonacciNumber);
+
+		// calculation for an arithmetic progression.
+		let step = 2,
+				count = 0,
+				progression = count;
+
+		for (var i = 0; i < 12; i++) {
+			count = count + step;
+			progression = progression + ', ' + count;
+		}
+
+		console.log('Arithmetic progression: ' + progression);
+
+
+		// calculation of the quadratic equation.
+
+		let x, x2;
+		do {
+			let a = +prompt('Please enter the first value for the quadratic equation'),
+					b = +prompt('Please enter the second value for the quadratic equation'),
+					c = +prompt('Please enter the third value for the quadratic equation');
+			if(a && b && c) {
+				let discriminant = (b*b) - (4 * a * c);
+				if(discriminant < 0) {
+					x = 0;
+					console.log('The equation has no roots.');
+				}
+
+				if(discriminant > 0) {
+					x = (-b + Math.sqrt(discriminant)) / (a * 2);
+					x2 = (-b - Math.sqrt(discriminant)) / (a * 2);
+					console.log('The roots of the quadratic equation: X1: ' + x + ' X2: ' + x2);
+				}
+
+				if(discriminant === 0) {
+					x = (-b + Math.sqrt(discriminant)) / (a * 2);
+					console.log('The root of the quadratic equation: ' + x);
+				}
+			}
+		}
+		while( x === undefined && confirm('You did not enter one of the values or one of the values is not a number.\nTry again?'));
+		
+		// Grains on a chessboard
+
+		let board = 8 * 8, // A chessboard in 64 cells
+				oneGrainWeight = 0.0305, // Average weight of one grain
+				grainInCell = 1,
+				grainOnBoard = 0,
+				totalWeight = 0;
+
+		for (let i = 0; i < board; i++) {
+			//grainInCell = grainInCell * grainInCell; // Such a variant of the task will lead to the value of "Infinity".
+			grainOnBoard = grainOnBoard + grainInCell;
+			grainInCell = grainInCell * 2;
+		}
+		totalWeight = grainOnBoard * oneGrainWeight;
+
+		console.log('Total number of grains on a chessboard: ' + grainOnBoard);
+		console.log('Total weight of all grains on a chessboard: ' + totalWeight);
+
+  </script>
+</body>
+</html>
