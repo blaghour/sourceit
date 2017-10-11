@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home work 3, task 3</title>
+</head>
+
+<body>
+  <!--Сделать програмку для расчета корней квадратного уравнения.-->
+  <script id="task3">
+    let a, b, c;
+    function quad(a, b, c) {
+      let d = Math.pow(b, 2) - 4 * a * c;
+      if (d >= 0) {
+        let xp = (-b + Math.sqrt(d, 2)) / (a * 2);
+        let xm = (-b - Math.sqrt(d, 2)) / (a * 2);
+        console.log('x+ = ' + xp + ', x- = ' + xm);
+      }
+      else {
+        console.log('No real solutions.')
+      }
+    }
+    quad(1, 4, 3);
+  </script>
+
+</body>
+
+</html>

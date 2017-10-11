@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home work 3, task 1</title>
+</head>
+
+<body>
+
+  <!--Сделать расчетную програмку для 12го числа фибаначчи.-->
+  <script id="task1">
+    let a = 0;  /*Initializing sequence*/
+    let b = 1;
+    let c = a + b;
+    let n;
+    while (true) {
+      n = prompt('Enter n-th number', 12); /*Fibonacci sequence number*/
+      if(!isNaN(n)) break;
+    }
+   
+    for (let i = 1; i < n; i++) {
+      c = a + b;
+      a = b;
+      b = c;
+    }
+    console.log(n + "-th Fibinacci number is " + c);
+  </script>
+
+</body>
+
+</html>
