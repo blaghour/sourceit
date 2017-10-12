@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Additional task</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		let value = 2;
+		console.log("---Classical task---");
+		for (let i = 0; i < 63; i++){
+			value = value * 2;
+		}
+		value = value + 1;
+		console.log("Number of seeds is "+value);
+		let weight = value * 30 * Math.pow(10, -9);
+		console.log("Wieght of seeds is "+ weight+" tones");
+		let price = weight * 150;
+		console.log("Man will earn "+price+"$");
+
+		console.log("---Another solution, with squares---");
+		console.log("Number of seeds is 1+2^"+value);
+		console.log("Weight of all seeds is equal 3*10^(-9) tones * 1+2^"+value+"tones");
+		console.log("Man will earn: 150$ * 3*10^(-9) tones * 1+2^"+value+"tones");
+	
+	</script>
+</body>
+</html>
