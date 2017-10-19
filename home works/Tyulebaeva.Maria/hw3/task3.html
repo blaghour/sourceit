@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-Compatible" content="ie=edge">
+	<title>Квадратное уравнение</title>
+</head>
+<body>
+
+	<script>
+
+        var a = Number (prompt('Введите а', a));
+        var b = Number (prompt('Введите b', b));
+        var c = Number (prompt('Введите c', c));
+
+            console.log('Ваше уравнение: ' + a + 'x^2' + '+' + b + 'x' + "+" + c);
+
+            var d = b*b - 4*a*c;
+            console.log('D= ' +d);
+            
+            if(d<0) { 
+                console.log('корней нет'); 
+            }
+
+            if(d == 0) {
+
+                let x= (-b / 2*a);
+                console.log('х1= ' + x1);
+            }
+
+            if(d>0)
+            {
+                let x1 = ((-b + Math.sqrt(d)) / (2*a);
+                let x2 = ((-b - Math.sqrt(d)) / (2*a);
+                console.log('х1= ' +x1 + ' х2= ' + x2);
+            }
+	</script>
+
+</body>
+</html>
